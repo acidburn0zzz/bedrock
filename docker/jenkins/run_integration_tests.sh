@@ -28,7 +28,7 @@ if [ "${DRIVER}" = "Remote" ]; then
   # Waits until all nodes are ready and then runs tests against a local
   # bedrock instance.
 
-  SELENIUM_VERSION=${SELENIUM_VERSION:-2.48.2}
+  SELENIUM_VERSION=${DOCKER_SELENIUM_VERSION:-"3.0.1-fermium"}
 
   docker pull selenium/hub:${SELENIUM_VERSION}
   docker pull selenium/node-firefox:${SELENIUM_VERSION}
@@ -53,6 +53,8 @@ if [ "${DRIVER}" = "Remote" ]; then
     done
   done
 fi
+
+# docker run -u $(id -u) -v `pwd`/results:/app/results \
 
 # make sure results dir exists or docker will create it
 # and it will be owned by root

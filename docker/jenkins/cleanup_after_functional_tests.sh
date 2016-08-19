@@ -7,6 +7,7 @@ docker rm bedrock-code-${BUILD_NUMBER}
 
 for NODE_NUMBER in `seq ${NUMBER_OF_NODES:-5}`;
 do
+    # docker logs bedrock-selenium-node-${NODE_NUMBER}-${BUILD_NUMBER} > ${WORKSPACE}/results/geckodriver-${NODE_NUMBER}-${BUILD_NUMBER}.log
     docker stop bedrock-selenium-node-${NODE_NUMBER}-${BUILD_NUMBER}
     docker rm bedrock-selenium-node-${NODE_NUMBER}-${BUILD_NUMBER}
 done;
