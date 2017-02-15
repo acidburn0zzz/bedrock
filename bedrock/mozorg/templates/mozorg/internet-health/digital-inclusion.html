@@ -1,0 +1,365 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. -#}
+
+{% extends "base-pebbles.html" %}
+
+{% block page_title %}{{ _('A Healthy Internet is Inclusive to All') }}{% endblock %}
+
+{% block page_desc %}{{ _('The quality of the Internet is a reflection of the diversity of the people who are able to access and contribute to it.') }}{% endblock %}
+{% block page_image %}{{ static('img/mozorg/internet-health/privacy/meta-image-columns.jpg') }}{% endblock %}
+
+{% block body_id %}health-digital-inclusion{% endblock %}
+{% block body_class %}{% endblock %}
+
+{% block page_css %}
+  {% stylesheet 'health-privacy-security' %}
+{% endblock %}
+
+{% block site_header %}
+  {% include 'mozorg/home/includes/nav.html' %}
+{% endblock %}
+
+{% block content %}
+<nav id="health-subnav" class="health-subnav">
+  <ul class="content">
+    <li><a href="{{ url('mozorg.internet-health.privacy-security') }}">{{ _('Privacy &amp; Security') }}</a></li>
+    <li class="active"><a href="{{ url('mozorg.internet-health.digital-inclusion') }}">{{ _('Digital Inclusion') }}</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+  <header class="section main-heading">
+    <div class="content">
+      <h1 class="page-title">{{ self.page_title() }}</h1>
+
+      <div class="head-intro">
+        <p>
+        {% trans %}
+          The more voices, perspective, languages, and people contributing to the
+          Web, the richer the experience for everyone. But the whole Internet is
+          not yet accessible, welcoming, and safe for all. Together, we have the
+          power to shape the Web, and our world along with it.
+        {% endtrans %}
+          <strong>
+        {% trans %}
+        A healthy Internet is open to you.
+        {% endtrans %}
+          </strong>
+        </p>
+      </div>
+
+      <nav class="head-pagenav">
+        <h2 class="head-pagenav-title">
+        {% trans %}
+          Here are three areas where we can make a difference.
+        {% endtrans %}
+        </h2>
+
+        <ul>
+          <li><a class="nav-control" href="#diversity">{{ _('Promote Diversity') }}</a></li>
+          <li><a class="nav-cybersecurity" href="#respect">{{ _('Practice Respect') }}</a></li>
+          <li><a class="nav-surveillance" href="#access">{{ _('Support Universal Access') }}</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="diversity" class="section topic">
+
+    <section class="topic-intro">
+      <div class="content">
+
+        <div class="topic-intro-main">
+          <h2 class="topic-title">{{ _('Digital Inclusion means promoting diversity') }}</h2>
+
+          <p>
+          {% trans %}
+            As inclusive as the Web can seem, it’s not yet an equal playing field.
+            More than half the world is still without it; emerging economies and
+            marginalized communities are often the last to gain access. Far fewer
+            women are using the Internet than men. And without diversity among its
+            creators, the Web itself will reflect unconscious biases, while
+            personalizing algorithms can reinforce our own.
+          {% endtrans %}
+          </p>
+
+          <p><strong>
+          {% trans %}
+            For the Internet to fulfill its greatest promise, it must reflect the
+            diversity and experience of all people, everywhere.
+          {% endtrans %}
+          </strong></p>
+        </div>
+
+        <div class="topic-intro-aside">
+          <blockquote class="pullquote">
+            <p class="quote">
+            {% trans %}
+              In nine developing countries, women are still nearly 50% less likely to
+              access the Internet than men.
+            {% endtrans %}
+            </p>
+
+            <p class="quote-source">
+              <cite>
+              {% trans wwwf='http://webfoundation.org/about/research/womens-rights-online-2015/' %}
+                Source: <a href="{{ wwwf }}">World Wide Web Foundation</a>, 2015
+              {% endtrans %}
+              </cite>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-action">
+      <div class="content">
+        <div class="topic-action-you">
+          <h3 class="topic-action-title">{{ _('How you can promote diversity') }}</h3>
+          <ol>
+            <li>
+            {% trans %}
+              Create your own Web content – like videos, blog posts, GIFs – in your
+              language, local to your area.
+            {% endtrans %}
+            </li>
+            <li>
+            {% trans %}
+              Support a resource like Wikipedia that drastically lowers the barriers to
+              knowledge – or better yet, help build it. Wikipedia needs more, and more
+              diverse, contributors.
+            {% endtrans %}
+            </li>
+            <li>
+            {% trans %}
+              Get out of your filter bubble. Try experiments like this one that reveals
+              what Americans with opposing political views are seeing in their social feeds.
+            {% endtrans %}
+            </li>
+          </ol>
+        </div>
+
+        <div class="topic-action-moz">
+          <h3 class="topic-action-title">{{ _('How Mozilla is promoting diversity') }}</h3>
+          <ol>
+            <li>
+            {% trans %}
+              Advancing web accessibility standards, and making Firefox inclusive
+              through efforts like our Accessibility team.
+            {% endtrans %}
+            </li>
+            <li>
+            {% trans %}
+              Partnering with UN Women to help women in Africa and across the
+              globe build key digital skills.
+            {% endtrans %}
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </section>{# end #diversity #}
+
+
+  <section id="respect" class="section topic">
+    <section class="topic-intro">
+      <div class="content">
+        <div class="topic-intro-main">
+          <h2 class="topic-title">{{ _('Digital Inclusion means practicing respect') }}</h2>
+
+          <p>
+          {% trans %}
+            We’ve all seen our share of nasty comments sections. At times, the Web can
+            feel like a very unfriendly place – particularly for women, minorities, and
+            members of marginalized communities. By discouraging people from getting
+            online, cyberbullying and cyber violence threaten not just individuals, but
+            the Internet itself.
+          {% endtrans %}
+          </p>
+
+          <p><strong>
+          {% trans %}
+            We should all have the ability to participate fully on the Internet, without
+            threat to our reputations, our confidence, or our safety.
+          {% endtrans %}
+          </strong></p>
+        </div>
+
+        <div class="topic-intro-aside">
+          <blockquote class="pullquote">
+            <p class="quote">
+            {% trans %}
+              73% of Internet users have seen someone harassed online and 40% have personally experienced it.
+            {% endtrans %}
+            </p>
+            <p class="quote-source">
+              <cite>
+              {% trans %}
+                Source: Pew Research, 2014
+              {% endtrans %}
+              </cite>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-action">
+      <div class="content">
+        <div class="topic-action-you">
+          <h3 class="topic-action-title">{{ _('How you can practice respect') }}</h3>
+          <ol>
+            <li>
+            {% trans %}
+              If you see cyber violence and bullying online, record it and report it.
+            {% endtrans %}
+            </li>
+            <li>
+            {% trans %}
+              Talk to your kids about cyberbullying, and encourage their teachers to do the same.
+            {% endtrans %}
+            </li>
+          </ol>
+        </div>
+
+        <div class="topic-action-moz">
+          <h3 class="topic-action-title">{{ _('How Mozilla is practicing respect') }}</h3>
+          <ol>
+            <li>
+            {% trans %}
+              Supporting the Coral Project, which works to improve how journalists and
+              communities engage on news websites, including tools like Talk, that aims
+              to create smarter, safer comments sections.
+            {% endtrans %}
+            </li>
+            <li>
+            {% trans %}
+              Creating open curricula that empowers people to create safe spaces online,
+              like the Teaching Kit: Combatting Cyber Violence Against Women and Girls.
+            {% endtrans %}
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </section>{# end #respect #}
+
+
+  <section id="access" class="section topic">
+    <section class="topic-intro">
+      <div class="content">
+        <div class="topic-intro-main">
+          <h2 class="topic-title">{{ _('Digital Inclusion means supporting universal access to the whole Internet') }}</h2>
+
+          <p>
+          {% trans %}
+            To participate online, you have to be able to get online. Programs have
+            emerged that offer free or subsidized Internet access, but it is often
+            slow or restricted, creating a ‘poor Internet for poor people.’ At its
+            most extreme, governments worldwide are turning off all or parts of the
+            Internet to serve their own agendas, which can threaten human rights and
+            even the health of the global economy.
+          {% endtrans %}
+          </p>
+
+          <p><strong>
+          {% trans %}
+            We should all have affordable, high-quality, unrestricted access to the
+            whole Web, so the whole world can benefit.
+          {% endtrans %}
+          </strong></p>
+        </div>
+
+        <div class="topic-intro-aside">
+          <blockquote class="pullquote">
+            <p class="quote">
+            {% trans %}
+              In 2016, there were 51 intentional Internet shutdowns in 18 countries.
+            {% endtrans %}
+            </p>
+            <p class="quote-source">
+              <cite>
+              {% trans %}
+                Source: AccessNow, 2016
+              {% endtrans %}
+              </cite>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-action">
+      <div class="content">
+        <div class="topic-action-you">
+          <h3 class="topic-action-title">{{ _('How you can support universal access') }}</h3>
+          <ol>
+            <li>
+            {% trans %}
+              Donate your old computers, laptops, and phones to non-profits like Reconnect,
+              Students Recycling Used Technology, or Interconnection, who refurbish and
+              redistribute them to underserved communities.
+            {% endtrans %}
+            </li>
+            <li>
+            {% trans %}
+              Tell your representatives that open and affordable access to the Internet
+              should be a policy priority.
+            {% endtrans %}
+            </li>
+          </ol>
+        </div>
+
+        <div class="topic-action-moz">
+          <h3 class="topic-action-title">{{ _('How Mozilla is supporting universal access') }}</h3>
+          <ol>
+            <li>
+            {% trans %}
+              Championing net neutrality, so that everyone has access to the same Internet.
+            {% endtrans %}
+            </li>
+            <li>
+            {% trans %}
+              Sponsoring the Equal Rating Innovation Challenge to find novel solutions
+              for connecting the unconnected to the full, open Internet.
+            {% endtrans %}
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </section>{# end #access #}
+
+  <section id="health-report" class="section health-report">
+    <div class="content">
+      <h2>{{ _('Hungry for more?') }}</h2>
+      <p class="report-cta">
+      {% trans healthreport='https://internethealthreport.org' %}
+        Read on about Digital Inclusion in our <a href="{{ healthreport }}">Internet Health Report</a>.
+      {% endtrans %}
+      </p>
+    </div>
+  </section>
+
+  <aside id="newsletter-subscribe">
+    <div class="content">
+      {{ email_newsletter_form(newsletters='mozilla-foundation',
+         title=_('Stay informed.'),
+         subtitle=_('Sign up. Read up. Get the Mozilla newsletter to stay smart on the issues affecting your life online.'),
+         button_class='button-light')
+      }}
+    </div>
+  </aside>
+
+</main>
+{% endblock %}
+
+{% block email_form %}{% endblock %}
+
+{% block js %}
+  {% javascript 'internet-health-subpage' %}
+{% endblock %}

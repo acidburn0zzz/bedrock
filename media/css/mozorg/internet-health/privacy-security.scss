@@ -10,7 +10,6 @@ $colorLink: #7d337e; // purple
 
 body {
     border-top: none;
-    color: #56565A;
 }
 
 #outer-wrapper {
@@ -21,6 +20,26 @@ main .content {
     max-width: $width-desktop;
 }
 
+.health-subnav {
+    background-color: $color-brand-neonblue;
+    font-weight: bold;
+    @include font-size(18px);
+
+    a {
+        color: $color-text-primary;
+        text-decoration: none;
+    }
+
+    li {
+        display: inline;
+        margin: 0 5px;
+        padding: .5em 5px;
+
+        &.active {
+            border-bottom: 3px solid $color-text-primary;
+        }
+    }
+}
 
 //*--------------------------------------------------------------------------*/
 // Page masthead
@@ -455,7 +474,8 @@ html[dir="rtl"] {
 }
 
 // User Control
-#control {
+#control,
+#diversity {
     background: #c4e89c; // green
 
     .topic-intro-aside:before {
@@ -468,7 +488,8 @@ html[dir="rtl"] {
 }
 
 // Cybersecurity
-#security {
+#security,
+#respect {
     background: #cbf3f7; // blue
 
     .topic-intro-aside:before {
@@ -481,7 +502,8 @@ html[dir="rtl"] {
 }
 
 // Government surveillance
-#surveillance {
+#surveillance,
+#access {
     background: #ffd8ee; // pink
 
     .topic-intro-aside:before {
