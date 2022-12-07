@@ -28,8 +28,9 @@ python-memcached==1.48 \
     --hash=sha256:66bbc62d9519f9d531b1f77e687d9f2f5e521cb906f1fd7231f403997e0110c4
 beautifulsoup4==4.3.2 \
     --hash=sha256:a2b29bd048ca2fe54a046b29770964738872a9747003a371344a93eedf7ad58e
-certifi==0.0.8 \
-    --hash=sha256:46ecf5f7526a08cc1f8bc8232adf0cffce046f46ceff95539daec42ebc4849ef
+certifi==2022.12.7 \
+    --hash=sha256:35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3 \
+    --hash=sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
 django-recaptcha==1.0.3 \
     --hash=sha256:bbb7365a42f95e32942e6a24657e7a760c9be660ef641daccec9fa8336faea69
 django-picklefield==0.3.1 \
