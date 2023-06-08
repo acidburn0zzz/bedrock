@@ -113,9 +113,9 @@ django-jinja-markdown==1.0 \
 Markdown==2.6.6 \
     --hash=sha256:9a292bb40d6d29abac8024887bcfc1159d7a32dc1d6f1f6e8d6d8e293666c504 \
     --hash=sha256:022239550fb4a84bcc3b3b42dff9a41efc56d773ef17c4f28016dd8f265c82d0
-requests==2.11.0 \
-    --hash=sha256:8b9b147f3dff1fc4055ff794ff931f735ed25e87efe667ed7c845a4bafae9b73 \
-    --hash=sha256:b2ff053e93ef11ea08b0e596a1618487c4e4c5f1006d7a1706e3671c57dea385
+requests==2.31.0 \
+    --hash=sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f \
+    --hash=sha256:942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1
 django-mozilla-product-details==0.12.1 \
     --hash=sha256:a31a51102e8c2f047f8aa62b8bdc552f7a31d9c69f2cb16393225c3ee0db72b5 \
     --hash=sha256:25ac11bd4544fef3236f32439f6b1de3bcf931f8b34c7786ab40f0ec85626eeb
