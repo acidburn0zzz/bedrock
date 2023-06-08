@@ -53,9 +53,9 @@ django-localflavor==1.1 \
 djangorestframework==3.3.2 \
     --hash=sha256:5634b1ff56581bf0fe4075e86227fc9693c1ca031c7213c9ae942c445c24817b \
     --hash=sha256:4962418a57804f8323282728a4f9b9496e78caec1adda352170697752eff01bf
-django-filter==0.11.0 \
-    --hash=sha256:7d17547b65216cc5c6fbc04aee55088ccd5917c0775304d96f7017c26c789cd7 \
-    --hash=sha256:00cc47935afbbd83260fdd283b0aa790e658d2a71922049f6e467dca8a124537
+django-filter==2.4.0 \
+    --hash=sha256:84e9d5bb93f237e451db814ed422a3a625751cbc9968b484ecc74964a8696b06 \
+    --hash=sha256:e00d32cebdb3d54273c48f4f878f898dced8d5dfaad009438fe61ebdf535ace1
 https://github.com/html5lib/html5lib-python/archive/3b3c1031b3dadf5369af83253fff2a2e6aa42dfd.tar.gz#egg=html5lib \
     --hash=sha256:3346704459d10b377e8b65c2d1dc5199d1d7879881c674abd2cf2f06fb62782f
 https://github.com/kurtmckee/feedparser/archive/2aa5286245ed40b13a0f77f997d124c1844bcb43.tar.gz#egg=feedparser \
